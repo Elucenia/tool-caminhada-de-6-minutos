@@ -1,0 +1,194 @@
+{
+  "tool": {
+    "id": "caminhada-de-6-minutos",
+    "title": "Teste de caminhada de 6 minutos: distância prevista",
+    "short": "Previsto e limite inferior (Enright e Sherrill)",
+    "desc": "Calcule a distância prevista no teste de caminhada de 6 minutos (Enright e Sherrill) e compare a distância percorrida com o previsto e o limite inferior.",
+    "lead": "Estima a distância que um adulto saudável de 40 a 80 anos percorre em 6 minutos, a partir de sexo, idade, altura e peso, e compara com o resultado do paciente.",
+    "spec": [
+      "pneumologia",
+      "cardiologia",
+      "medicina-fisica-e-reabilitacao",
+      "cirurgia-toracica"
+    ],
+    "fields": [
+      [
+        "sexo",
+        "Sexo",
+        "radio",
+        {
+          "opts": {
+            "F": "Feminino",
+            "M": "Masculino"
+          }
+        }
+      ],
+      [
+        "idade",
+        "Idade",
+        "num",
+        {
+          "min": 18,
+          "max": 100,
+          "unit": "anos",
+          "ph": "60"
+        }
+      ],
+      [
+        "altura",
+        "Altura",
+        "num",
+        {
+          "min": 120,
+          "max": 220,
+          "unit": "cm",
+          "ph": "170"
+        }
+      ],
+      [
+        "peso",
+        "Peso",
+        "num",
+        {
+          "min": 30,
+          "max": 250,
+          "step": 0.1,
+          "unit": "kg",
+          "ph": "75"
+        }
+      ],
+      [
+        "dist",
+        "Distância percorrida",
+        "num",
+        {
+          "min": 0,
+          "max": 1000,
+          "unit": "m",
+          "ph": "450",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p><strong>Homens:</strong> (7,57 × altura em cm) − (5,02 × idade) − (1,76 × peso em kg) − 309 m. Limite inferior = previsto − 153 m.</p><p><strong>Mulheres:</strong> (2,11 × altura em cm) − (2,29 × peso em kg) − (5,78 × idade) + 667 m. Limite inferior = previsto − 139 m.</p>",
+    "table": [
+      [
+        "Referência",
+        "Valor"
+      ],
+      [
+        "Mediana em adultos saudáveis (Enright 1998)",
+        "576 m (homens) e 494 m (mulheres)"
+      ],
+      [
+        "Diferença clinicamente importante na DPOC",
+        "~30 m"
+      ],
+      [
+        "Distância &lt; 350 m",
+        "Pior prognóstico na DPOC (componente do índice BODE)"
+      ]
+    ],
+    "tips": [
+      "Siga o protocolo da ATS: corredor plano de 30 m, frases de incentivo padronizadas e sem acompanhar o paciente andando ao lado.",
+      "A equação é de norte-americanos de 40 a 80 anos; equações brasileiras (por exemplo, Britto e colaboradores) podem prever distâncias um pouco diferentes.",
+      "Registre SatO₂, FC e Borg antes e ao final: dessaturação ≥ 4% ou para &lt; 88% é informação prognóstica e orienta oxigenoterapia de esforço.",
+      "Em testes seriados, compare a distância absoluta: o percentual do previsto muda pouco com o tempo e esconde a evolução."
+    ],
+    "sources": [
+      [
+        "Enright PL, Sherrill DL. Reference equations for the six-minute walk in healthy adults. Am J Respir Crit Care Med, 1998.",
+        "https://doi.org/10.1164/ajrccm.158.5.9710086"
+      ],
+      [
+        "ATS Committee on Proficiency Standards for Clinical Pulmonary Function Laboratories. ATS statement: guidelines for the six-minute walk test. Am J Respir Crit Care Med, 2002.",
+        "https://doi.org/10.1164/ajrccm.166.1.at1102"
+      ]
+    ],
+    "cases": [
+      [
+        "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+        {
+          "sexo": "M",
+          "idade": 60,
+          "altura": 175,
+          "peso": 80,
+          "dist": 450
+        },
+        {
+          "raw": {
+            "pred": 573.75,
+            "lin": 420.75,
+            "pct": 78.43
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+        {
+          "sexo": "F",
+          "idade": 70,
+          "altura": 160,
+          "peso": 70,
+          "dist": 280
+        },
+        {
+          "raw": {
+            "pred": 439.7,
+            "lin": 300.7,
+            "pct": 63.68
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+        {
+          "sexo": "F",
+          "idade": 50,
+          "altura": 165,
+          "peso": 60
+        },
+        {
+          "raw": {
+            "pred": 588.75
+          },
+          "level": "info"
+        }
+      ]
+    ],
+    "batch": "torax-vascular",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/torax-vascular.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/torax-vascular.php",
+    "sha256": "e99bbd1938580ff9b46e0252fdd8cb72e87c63869f934005b8ef6d807ce8b6e2",
+    "bytes": 91275
+  },
+  "clinicalValidation": "not-performed"
+}
