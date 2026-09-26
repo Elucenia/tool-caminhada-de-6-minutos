@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-caminhada-de-6-minutos · Elucenia · https://github.com/Elucenia/tool-caminhada-de-6-minutos
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"caminhada-de-6-minutos","title":"Teste de caminhada de 6 minutos: distância prevista","fields":[["sexo","Sexo","radio",{"opts":{"F":"Feminino","M":"Masculino"}}],["idade","Idade","num",{"min":18,"max":100,"unit":"anos","ph":"60"}],["altura","Altura","num",{"min":120,"max":220,"unit":"cm","ph":"170"}],["peso","Peso","num",{"min":30,"max":250,"step":0.1,"unit":"kg","ph":"75"}],["dist","Distância percorrida","num",{"min":0,"max":1000,"unit":"m","ph":"450","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
