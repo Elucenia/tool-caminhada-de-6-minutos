@@ -1,0 +1,361 @@
+{
+  "id": "caminhada-de-6-minutos",
+  "at": "2026-10-05T17:29:08.476Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/caminhada-de-6-minutos/calculator.js",
+    "bytes": 5307,
+    "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+  },
+  "cases": [
+    {
+      "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+      "input": {
+        "sexo": "M",
+        "idade": 60,
+        "altura": 175,
+        "peso": 80,
+        "dist": 450
+      },
+      "obtained": {
+        "id": "caminhada-de-6-minutos",
+        "main": [
+          "574",
+          "m"
+        ],
+        "label": "Distância prevista em 6 minutos",
+        "raw": {
+          "pred": 573.75,
+          "lin": 420.75,
+          "pct": 78.43137254901961
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.pred",
+          "expected": 573.75,
+          "obtained": 573.75,
+          "tolerance": 0.00500001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.lin",
+          "expected": 420.75,
+          "obtained": 420.75,
+          "tolerance": 0.00500001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.pct",
+          "expected": 78.43,
+          "obtained": 78.43137254901961,
+          "tolerance": 0.00500001,
+          "difference": 0.0013725490196065948,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pred",
+          "expected": 573.75,
+          "obtained": 573.75,
+          "tolerance": 5.7375e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lin",
+          "expected": 420.75,
+          "obtained": 420.75,
+          "tolerance": 4.2074999999999997e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pct",
+          "expected": 78.43137254901961,
+          "obtained": 78.43137254901961,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "574",
+          "obtained": "574",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "m",
+          "obtained": "m",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+      "input": {
+        "sexo": "F",
+        "idade": 70,
+        "altura": 160,
+        "peso": 70,
+        "dist": 280
+      },
+      "obtained": {
+        "id": "caminhada-de-6-minutos",
+        "main": [
+          "440",
+          "m"
+        ],
+        "label": "Distância prevista em 6 minutos",
+        "raw": {
+          "pred": 439.69999999999993,
+          "lin": 300.69999999999993,
+          "pct": 63.67978166932
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.pred",
+          "expected": 439.7,
+          "obtained": 439.69999999999993,
+          "tolerance": 0.050000010000000004,
+          "difference": 5.684341886080802e-14,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.lin",
+          "expected": 300.7,
+          "obtained": 300.69999999999993,
+          "tolerance": 0.050000010000000004,
+          "difference": 5.684341886080802e-14,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.pct",
+          "expected": 63.68,
+          "obtained": 63.67978166932,
+          "tolerance": 0.00500001,
+          "difference": 0.0002183306799992124,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pred",
+          "expected": 439.69999999999993,
+          "obtained": 439.69999999999993,
+          "tolerance": 4.3969999999999994e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lin",
+          "expected": 300.69999999999993,
+          "obtained": 300.69999999999993,
+          "tolerance": 3.006999999999999e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pct",
+          "expected": 63.67978166932,
+          "obtained": 63.67978166932,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "440",
+          "obtained": "440",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "m",
+          "obtained": "m",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+      "input": {
+        "sexo": "F",
+        "idade": 50,
+        "altura": 165,
+        "peso": 60
+      },
+      "obtained": {
+        "id": "caminhada-de-6-minutos",
+        "main": [
+          "589",
+          "m"
+        ],
+        "label": "Distância prevista em 6 minutos",
+        "raw": {
+          "pred": 588.75,
+          "lin": 449.75,
+          "pct": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.pred",
+          "expected": 588.75,
+          "obtained": 588.75,
+          "tolerance": 0.00500001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pred",
+          "expected": 588.75,
+          "obtained": 588.75,
+          "tolerance": 5.8875e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lin",
+          "expected": 449.75,
+          "obtained": 449.75,
+          "tolerance": 4.4974999999999997e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pct",
+          "expected": null,
+          "obtained": null,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "589",
+          "obtained": "589",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "m",
+          "obtained": "m",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 45,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

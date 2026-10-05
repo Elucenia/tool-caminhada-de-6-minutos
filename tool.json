@@ -5,6 +5,7 @@
     "short": "Previsto e limite inferior (Enright e Sherrill)",
     "desc": "Calcule a distância prevista no teste de caminhada de 6 minutos (Enright e Sherrill) e compare a distância percorrida com o previsto e o limite inferior.",
     "lead": "Estima a distância que um adulto saudável de 40 a 80 anos percorre em 6 minutos, a partir de sexo, idade, altura e peso, e compara com o resultado do paciente.",
+    "kind": "Calculadora",
     "spec": [
       "pneumologia",
       "cardiologia",
@@ -71,30 +72,6 @@
       ]
     ],
     "formula": "<p><strong>Homens:</strong> (7,57 × altura em cm) − (5,02 × idade) − (1,76 × peso em kg) − 309 m. Limite inferior = previsto − 153 m.</p><p><strong>Mulheres:</strong> (2,11 × altura em cm) − (2,29 × peso em kg) − (5,78 × idade) + 667 m. Limite inferior = previsto − 139 m.</p>",
-    "table": [
-      [
-        "Referência",
-        "Valor"
-      ],
-      [
-        "Mediana em adultos saudáveis (Enright 1998)",
-        "576 m (homens) e 494 m (mulheres)"
-      ],
-      [
-        "Diferença clinicamente importante na DPOC",
-        "~30 m"
-      ],
-      [
-        "Distância &lt; 350 m",
-        "Pior prognóstico na DPOC (componente do índice BODE)"
-      ]
-    ],
-    "tips": [
-      "Siga o protocolo da ATS: corredor plano de 30 m, frases de incentivo padronizadas e sem acompanhar o paciente andando ao lado.",
-      "A equação é de norte-americanos de 40 a 80 anos; equações brasileiras (por exemplo, Britto e colaboradores) podem prever distâncias um pouco diferentes.",
-      "Registre SatO₂, FC e Borg antes e ao final: dessaturação ≥ 4% ou para &lt; 88% é informação prognóstica e orienta oxigenoterapia de esforço.",
-      "Em testes seriados, compare a distância absoluta: o percentual do previsto muda pouco com o tempo e esconde a evolução."
-    ],
     "sources": [
       [
         "Enright PL, Sherrill DL. Reference equations for the six-minute walk in healthy adults. Am J Respir Crit Care Med, 1998.",
@@ -158,9 +135,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -169,17 +143,525 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T16:44:15.340Z",
+      "total": 95,
+      "passed": 95,
+      "sourceRowCount": 95,
+      "uniqueApiInputCount": 95,
+      "sourceContextCount": 95,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "eea367070a83e89a3f16971230f4e64e4b08ecc2053cc7d2c2383824b0d32bb7",
+        "total": 95,
+        "bankRowCount": 95,
+        "uniqueApiInputCount": 95,
+        "sourceContextCount": 95,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/seven-limited-source-independent-expectations-final26.json",
+            "sha256": "4b960d8c215321b3f059726a3b7bc6b35f0fe4d63a7ee845fbc6edb535a4f0cc"
+          },
+          {
+            "file": "reports/review-20261003/three-limited-source-expectations-final23.json",
+            "sha256": "77dd54945e893d2ec34288cfcccaad3bd6208515cd255912b98c0e2de48a30e3"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+          "sha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80"
+        },
+        "packagingRequirement": "Copy this V2 strictly scoped complete bank only into fresh frozen26 packages after independent peer; V1 and prior25 archives remain unchanged."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "audit": {
+          "file": "reports/review-20261003/seven-limited-source-input-identity-final26.json",
+          "sha256": "e184ba55d7cd2c90120c495d3143d067bd5d72ae98b914f22a75fb943e510d94"
+        },
+        "sourceRows": 95,
+        "uniqueApiInputs": 95,
+        "duplicateRows": 0
+      },
+      "scope": "Enright/Sherrill1998 Table3 sex-specific height/weight equations and lower limits153m/139m for healthy adults40–80 on the first test. Observed/predicted percentage is a separately derived arithmetic identity. No ATS full protocol, alternative BMI equation, below-LLN clinical label, diagnosis or extrapolation approval.",
+      "sources": [
+        {
+          "id": "caminhada-de-6-minutos",
+          "edition": "Enright/Sherrill1998, AJRCCM158:1384–1387, Table3 printed1386",
+          "url": "https://www.igptr.ch/fileadmin/IGPTR-P/documents/1998_Enright-PL_Reference-equations-for-the-six-minute-walk-in-healthy-adults.pdf",
+          "pdf": "limited-primary-enright1998-final23.pdf",
+          "pdfSha256": "8cc809519d97f95ecf56b1821ea08223589461e1d89012a4e4d0006fbb3ac82b",
+          "access": "Original article PDF retrieved from host, rendered page3 and visually read Table3 plus adjacent results/discussion; abstract/method/population sections additionally read as web text. Retrieval alone is not whole-paper clinical review.",
+          "readScope": "Height/weight sex-specific Table3 equations and LLN153m/139m, first-test adult40–80 context;117men173women; models explain42%/38% variation.",
+          "formula": {
+            "M": "7.57*heightcm -5.02*age -1.76*weightkg -309",
+            "F": "2.11*heightcm -2.29*weightkg -5.78*age +667",
+            "llnM": "pred-153",
+            "llnF": "pred-139"
+          },
+          "notReviewed": [
+            "ATS2002 full protocol conformance",
+            "Alternative BMI equations not implemented/tested",
+            "Clinical labels below/above LLN",
+            "Individual diagnostic meaning",
+            "Anthropometric or demographic extrapolation beyond original cohort"
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+      "evidenceSha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80",
+      "originalEvidence": {
+        "file": "reports/review-20261003/three-limited-source-oracles-final23.json",
+        "sha256": "b5a0c3a3822f0195aff892cd543332097c5b8a7ecd108774719038a91d98392f"
+      },
+      "independentPeer": {
+        "status": "passed",
+        "requiredScope": "Metadata/helper/source-component peer before root application; no clinical approval inferred.",
+        "recordedAt": "2026-10-04T18:58:12.856Z",
+        "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+        "previousStatus": {
+          "status": "pending",
+          "requiredScope": "Metadata/helper/source-component peer before root application; no clinical approval inferred."
+        },
+        "peer": {
+          "file": "reports/review-20261003/seven-limited-source-evidence-independent-peer-final26-v2-r2.json",
+          "sha256": "28a96906dcfa0ce5272da34613c4ca61686204552a235ebc4adbb65e4ff6868c",
+          "summary": {
+            "checks": 18879,
+            "failed": 0,
+            "methods": 7,
+            "sourceRows": 2902,
+            "uniqueInputs": 2902,
+            "freshExecutions": 8706,
+            "helperAssertions": 25953,
+            "metadataMethods": 120,
+            "metadataRows": 52620,
+            "metadataUnique": 52548,
+            "metadataRepeats": 72
+          },
+          "scope": "Root independent peer of exact41 preimages/afterimages; independently frozen2902 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all11 previous scopes;21 fresh Node helper executions replay all7 limited numeric components without clinical approval."
+        },
+        "application": {
+          "file": "reports/review-20261003/seven-limited-source-evidence-application-final26.json",
+          "sha256": "3b1cd7d57c7062aa640504095c1a7eca5b051af7c0c0c8d4d5b1965a869080da"
+        },
+        "reviewedBankScope": "Enright/Sherrill1998 Table3 sex-specific height/weight equations and lower limits153m/139m for healthy adults40–80 on the first test. Observed/predicted percentage is a separately derived arithmetic identity. No ATS full protocol, alternative BMI equation, below-LLN clinical label, diagnosis or extrapolation approval.",
+        "currentBinding": {
+          "source26BankSha256": "7e3287b8ea8ab3f098f4b2a6f74f08c7462a9b7cd0d4ca48a4d0a3fba7ea4644",
+          "implementations": [
+            {
+              "file": "apps/website/private/tool-code/caminhada-de-6-minutos/calculator.js",
+              "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/caminhada-de-6-minutos/calculator.js",
+              "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/caminhada-de-6-minutos/calculator.js",
+              "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+            }
+          ],
+          "subsequentReviewedRebinds": []
+        },
+        "originalFailuresAndScopeQualificationsPreserved": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 285,
+      "actualVmExecutions": 285,
+      "implementations": [
+        {
+          "id": "caminhada-de-6-minutos",
+          "app": "website",
+          "file": "apps/website/private/tool-code/caminhada-de-6-minutos/calculator.js",
+          "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+        },
+        {
+          "id": "caminhada-de-6-minutos",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/caminhada-de-6-minutos/calculator.js",
+          "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+        },
+        {
+          "id": "caminhada-de-6-minutos",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/caminhada-de-6-minutos/calculator.js",
+          "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+        }
+      ],
+      "qualifications": [
+        "Enright/Sherrill1998 Table3 sex-specific height/weight equations and lower limits153m/139m for healthy adults40–80 on the first test. Observed/predicted percentage is a separately derived arithmetic identity. No ATS full protocol, alternative BMI equation, below-LLN clinical label, diagnosis or extrapolation approval.",
+        "Original sourceExpected data retained alongside own expected raw-component projections; clinical codes/thresholds and survival fields deliberately excluded from the package replay.",
+        "All862 original historical fixtures/expected values/tolerances and approval flags preserved. Four inline metadata rows are only a declared subset of this complete downloadable bank."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicOutputProjection": {
+        "status": "only-verified-raw-numeric-components",
+        "recordedAt": "2026-10-04T16:49:59.792Z",
+        "sourceEvidence": {
+          "file": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+          "sha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80"
+        },
+        "originalBank": {
+          "file": "reports/review-20261003/seven-limited-source-evidence-stage-final26/apps/website/private/tool-code/caminhada-de-6-minutos/independent-source-cases.json",
+          "sha256": "256dcfa8b42c4bc33c7a2381d5370d9c3eafc11d60cc025dc2760d402e9edea8"
+        },
+        "originalReportsPreserved": true,
+        "excluded": [
+          "Unexposed MASCC risk flag and USC/VNPI group expectations",
+          "MACIS survival and other untested returned raw fields",
+          "Karvonen exercise-zone main display and all untested main display values",
+          "Original API error prose; only rejection presence is tested"
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Enright Sherrill 1998:regressãosexualidadealtura/peso,40–80 anos; LLN−153/−139 m",
+    "implementationVersion": "caminhada-de-6-minutos@native-2026-10-03+29e5a629422d",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/9817683/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Homens: (7,57 × altura em cm) − (5,02 × idade) − (1,76 × peso em kg) − 309 m. Limite inferior = previsto − 153 m. Mulheres: (2,11 × altura em cm) − (2,29 × peso em kg) − (5,78 × idade) + 667 m. Limite inferior = previsto − 139 m.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "sexo",
+            "label": "Sexo",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "F": "Feminino",
+              "M": "Masculino"
+            }
+          },
+          {
+            "key": "idade",
+            "label": "Idade",
+            "type": "num",
+            "min": 18,
+            "max": 100,
+            "unit": "anos",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "altura",
+            "label": "Altura",
+            "type": "num",
+            "min": 120,
+            "max": 220,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "peso",
+            "label": "Peso",
+            "type": "num",
+            "min": 30,
+            "max": 250,
+            "unit": "kg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dist",
+            "label": "Distância percorrida",
+            "type": "num",
+            "min": 0,
+            "max": 1000,
+            "unit": "m",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "2048db7b37311a957c0cae572ba4cc5e5f9750992e7bbf8b881d88f966285cdc"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Enright PL, Sherrill DL. Reference equations for the six-minute walk in healthy adults. Am J Respir Crit Care Med, 1998.",
+          "url": "https://doi.org/10.1164/ajrccm.158.5.9710086",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Reference equations for the six-minute walk in healthy adults.",
+            "year": "1998",
+            "firstPublicationDate": "1998-11-01",
+            "doi": "10.1164/ajrccm.158.5.9710086",
+            "pmid": "9817683",
+            "journal": "American journal of respiratory and critical care medicine",
+            "authors": "Enright PL, Sherrill DL."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/9817683/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "40d342c688a47a80d30e49c1457bb3e1282a8402e9fe6eb31de0a63cdd09cbf2",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "ATS Committee on Proficiency Standards for Clinical Pulmonary Function Laboratories. ATS statement: guidelines for the six-minute walk test. Am J Respir Crit Care Med, 2002.",
+          "url": "https://doi.org/10.1164/ajrccm.166.1.at1102",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "ATS statement: guidelines for the six-minute walk test.",
+            "year": "2002",
+            "firstPublicationDate": "2002-07-01",
+            "doi": "10.1164/ajrccm.166.1.at1102",
+            "pmid": "12091180",
+            "journal": "American journal of respiratory and critical care medicine",
+            "authors": "ATS Committee on Proficiency Standards for Clinical Pulmonary Function Laboratories."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/12091180/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T16:44:15.340Z",
+        "total": 95,
+        "passed": 95,
+        "sourceRowCount": 95,
+        "uniqueApiInputCount": 95,
+        "sourceContextCount": 95,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "eea367070a83e89a3f16971230f4e64e4b08ecc2053cc7d2c2383824b0d32bb7",
+          "total": 95,
+          "bankRowCount": 95,
+          "uniqueApiInputCount": 95,
+          "sourceContextCount": 95,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/seven-limited-source-independent-expectations-final26.json",
+              "sha256": "4b960d8c215321b3f059726a3b7bc6b35f0fe4d63a7ee845fbc6edb535a4f0cc"
+            },
+            {
+              "file": "reports/review-20261003/three-limited-source-expectations-final23.json",
+              "sha256": "77dd54945e893d2ec34288cfcccaad3bd6208515cd255912b98c0e2de48a30e3"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+            "sha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80"
+          },
+          "packagingRequirement": "Copy this V2 strictly scoped complete bank only into fresh frozen26 packages after independent peer; V1 and prior25 archives remain unchanged."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "audit": {
+            "file": "reports/review-20261003/seven-limited-source-input-identity-final26.json",
+            "sha256": "e184ba55d7cd2c90120c495d3143d067bd5d72ae98b914f22a75fb943e510d94"
+          },
+          "sourceRows": 95,
+          "uniqueApiInputs": 95,
+          "duplicateRows": 0
+        },
+        "scope": "Enright/Sherrill1998 Table3 sex-specific height/weight equations and lower limits153m/139m for healthy adults40–80 on the first test. Observed/predicted percentage is a separately derived arithmetic identity. No ATS full protocol, alternative BMI equation, below-LLN clinical label, diagnosis or extrapolation approval.",
+        "sources": [
+          {
+            "id": "caminhada-de-6-minutos",
+            "edition": "Enright/Sherrill1998, AJRCCM158:1384–1387, Table3 printed1386",
+            "url": "https://www.igptr.ch/fileadmin/IGPTR-P/documents/1998_Enright-PL_Reference-equations-for-the-six-minute-walk-in-healthy-adults.pdf",
+            "pdf": "limited-primary-enright1998-final23.pdf",
+            "pdfSha256": "8cc809519d97f95ecf56b1821ea08223589461e1d89012a4e4d0006fbb3ac82b",
+            "access": "Original article PDF retrieved from host, rendered page3 and visually read Table3 plus adjacent results/discussion; abstract/method/population sections additionally read as web text. Retrieval alone is not whole-paper clinical review.",
+            "readScope": "Height/weight sex-specific Table3 equations and LLN153m/139m, first-test adult40–80 context;117men173women; models explain42%/38% variation.",
+            "formula": {
+              "M": "7.57*heightcm -5.02*age -1.76*weightkg -309",
+              "F": "2.11*heightcm -2.29*weightkg -5.78*age +667",
+              "llnM": "pred-153",
+              "llnF": "pred-139"
+            },
+            "notReviewed": [
+              "ATS2002 full protocol conformance",
+              "Alternative BMI equations not implemented/tested",
+              "Clinical labels below/above LLN",
+              "Individual diagnostic meaning",
+              "Anthropometric or demographic extrapolation beyond original cohort"
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+        "evidenceSha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80",
+        "originalEvidence": {
+          "file": "reports/review-20261003/three-limited-source-oracles-final23.json",
+          "sha256": "b5a0c3a3822f0195aff892cd543332097c5b8a7ecd108774719038a91d98392f"
+        },
+        "independentPeer": {
+          "status": "passed",
+          "requiredScope": "Metadata/helper/source-component peer before root application; no clinical approval inferred.",
+          "recordedAt": "2026-10-04T18:58:12.856Z",
+          "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+          "previousStatus": {
+            "status": "pending",
+            "requiredScope": "Metadata/helper/source-component peer before root application; no clinical approval inferred."
+          },
+          "peer": {
+            "file": "reports/review-20261003/seven-limited-source-evidence-independent-peer-final26-v2-r2.json",
+            "sha256": "28a96906dcfa0ce5272da34613c4ca61686204552a235ebc4adbb65e4ff6868c",
+            "summary": {
+              "checks": 18879,
+              "failed": 0,
+              "methods": 7,
+              "sourceRows": 2902,
+              "uniqueInputs": 2902,
+              "freshExecutions": 8706,
+              "helperAssertions": 25953,
+              "metadataMethods": 120,
+              "metadataRows": 52620,
+              "metadataUnique": 52548,
+              "metadataRepeats": 72
+            },
+            "scope": "Root independent peer of exact41 preimages/afterimages; independently frozen2902 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all11 previous scopes;21 fresh Node helper executions replay all7 limited numeric components without clinical approval."
+          },
+          "application": {
+            "file": "reports/review-20261003/seven-limited-source-evidence-application-final26.json",
+            "sha256": "3b1cd7d57c7062aa640504095c1a7eca5b051af7c0c0c8d4d5b1965a869080da"
+          },
+          "reviewedBankScope": "Enright/Sherrill1998 Table3 sex-specific height/weight equations and lower limits153m/139m for healthy adults40–80 on the first test. Observed/predicted percentage is a separately derived arithmetic identity. No ATS full protocol, alternative BMI equation, below-LLN clinical label, diagnosis or extrapolation approval.",
+          "currentBinding": {
+            "source26BankSha256": "7e3287b8ea8ab3f098f4b2a6f74f08c7462a9b7cd0d4ca48a4d0a3fba7ea4644",
+            "implementations": [
+              {
+                "file": "apps/website/private/tool-code/caminhada-de-6-minutos/calculator.js",
+                "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+              },
+              {
+                "file": "apps/dashboard/private/tool-code/caminhada-de-6-minutos/calculator.js",
+                "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+              },
+              {
+                "file": "apps/command-center/private/tool-code/caminhada-de-6-minutos/calculator.js",
+                "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+              }
+            ],
+            "subsequentReviewedRebinds": []
+          },
+          "originalFailuresAndScopeQualificationsPreserved": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 285,
+        "actualVmExecutions": 285,
+        "implementations": [
+          {
+            "id": "caminhada-de-6-minutos",
+            "app": "website",
+            "file": "apps/website/private/tool-code/caminhada-de-6-minutos/calculator.js",
+            "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+          },
+          {
+            "id": "caminhada-de-6-minutos",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/caminhada-de-6-minutos/calculator.js",
+            "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+          },
+          {
+            "id": "caminhada-de-6-minutos",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/caminhada-de-6-minutos/calculator.js",
+            "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+          }
+        ],
+        "qualifications": [
+          "Enright/Sherrill1998 Table3 sex-specific height/weight equations and lower limits153m/139m for healthy adults40–80 on the first test. Observed/predicted percentage is a separately derived arithmetic identity. No ATS full protocol, alternative BMI equation, below-LLN clinical label, diagnosis or extrapolation approval.",
+          "Original sourceExpected data retained alongside own expected raw-component projections; clinical codes/thresholds and survival fields deliberately excluded from the package replay.",
+          "All862 original historical fixtures/expected values/tolerances and approval flags preserved. Four inline metadata rows are only a declared subset of this complete downloadable bank."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicOutputProjection": {
+          "status": "only-verified-raw-numeric-components",
+          "recordedAt": "2026-10-04T16:49:59.792Z",
+          "sourceEvidence": {
+            "file": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+            "sha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80"
+          },
+          "originalBank": {
+            "file": "reports/review-20261003/seven-limited-source-evidence-stage-final26/apps/website/private/tool-code/caminhada-de-6-minutos/independent-source-cases.json",
+            "sha256": "256dcfa8b42c4bc33c7a2381d5370d9c3eafc11d60cc025dc2760d402e9edea8"
+          },
+          "originalReportsPreserved": true,
+          "excluded": [
+            "Unexposed MASCC risk flag and USC/VNPI group expectations",
+            "MACIS survival and other untested returned raw fields",
+            "Karvonen exercise-zone main display and all untested main display values",
+            "Original API error prose; only rejection presence is tested"
+          ],
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+    },
+    "limits": "As equações de Enright/Sherrill foram derivadas em adultos saudáveis de 40–80 anos, para primeiro teste pelo protocolo padronizado. Explicam aproximadamente 40% da variabilidade da distância. Predição e percentual não constituem diagnóstico; idade fora da faixa ou protocolo diferente requerem outra referência adequada.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.155Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não contém limites inferiores −153/−139, critérios completos ou protocolo ATS 2002. Não prova aplicação fora de 40–80 anos."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/caminhada-de-6-minutos/calculator.js",
+    "bytes": 5307,
+    "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "5907daaab6888e935a4fdf820e2808e1356cbf446585a30d5042791fc35913f9",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "cea39b8e50295b7f051808a781b03837c98080f767c0108fa966ec321a15b64e",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "cea39b8e50295b7f051808a781b03837c98080f767c0108fa966ec321a15b64e",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

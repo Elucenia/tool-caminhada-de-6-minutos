@@ -1,6 +1,16 @@
 [
   {
-    "label": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+    "id": "caminhada-de-6-minutos",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+    "originalInput": {
+      "sexo": "M",
+      "idade": 60,
+      "altura": 175,
+      "peso": 80,
+      "dist": 450
+    },
     "input": {
       "sexo": "M",
       "idade": 60,
@@ -16,17 +26,39 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "sexo": "M",
-      "idade": 60,
-      "altura": 175,
-      "peso": 80,
-      "dist": 450
+    "recordedResult": {
+      "main": [
+        "574",
+        "m"
+      ],
+      "label": "Distância prevista em 6 minutos",
+      "raw": {
+        "pred": 573.75,
+        "lin": 420.75,
+        "pct": 78.43137254901961
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+    "id": "caminhada-de-6-minutos",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+    "originalInput": {
+      "sexo": "F",
+      "idade": 70,
+      "altura": 160,
+      "peso": 70,
+      "dist": 280
+    },
     "input": {
       "sexo": "F",
       "idade": 70,
@@ -42,17 +74,38 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "sexo": "F",
-      "idade": 70,
-      "altura": 160,
-      "peso": 70,
-      "dist": 280
+    "recordedResult": {
+      "main": [
+        "440",
+        "m"
+      ],
+      "label": "Distância prevista em 6 minutos",
+      "raw": {
+        "pred": 439.69999999999993,
+        "lin": 300.69999999999993,
+        "pct": 63.67978166932
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+    "id": "caminhada-de-6-minutos",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+    "originalInput": {
+      "sexo": "F",
+      "idade": 50,
+      "altura": 165,
+      "peso": 60
+    },
     "input": {
       "sexo": "F",
       "idade": 50,
@@ -65,12 +118,25 @@
       },
       "level": "info"
     },
-    "originalInput": {
-      "sexo": "F",
-      "idade": 50,
-      "altura": 165,
-      "peso": 60
+    "recordedResult": {
+      "main": [
+        "589",
+        "m"
+      ],
+      "label": "Distância prevista em 6 minutos",
+      "raw": {
+        "pred": 588.75,
+        "lin": 449.75,
+        "pct": null
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
