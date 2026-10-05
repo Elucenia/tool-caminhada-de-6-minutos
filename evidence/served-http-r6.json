@@ -1,0 +1,751 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "caminhada-de-6-minutos",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/caminhada-de-6-minutos/calculator.js",
+    "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab",
+    "bytes": 5307
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 3,
+    "replayed": 3,
+    "passed": 3,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "caminhada-de-6-minutos",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+      "originalInput": {
+        "sexo": "M",
+        "idade": 60,
+        "altura": 175,
+        "peso": 80,
+        "dist": 450
+      },
+      "input": {
+        "sexo": "M",
+        "idade": 60,
+        "altura": 175,
+        "peso": 80,
+        "dist": 450
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pred": 573.75,
+          "lin": 420.75,
+          "pct": 78.43
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "574",
+          "m"
+        ],
+        "label": "Distância prevista em 6 minutos",
+        "raw": {
+          "pred": 573.75,
+          "lin": 420.75,
+          "pct": 78.43137254901961
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/caminhada-de-6-minutos/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "M",
+            "idade": 60,
+            "altura": 175,
+            "peso": 80,
+            "dist": 450
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/caminhada-de-6-minutos/calculate",
+          "startedAt": "2026-10-05T17:39:53.634Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "caminhada-de-6-minutos",
+              "main": [
+                "574",
+                "m"
+              ],
+              "label": "Distância prevista em 6 minutos",
+              "raw": {
+                "pred": 573.75,
+                "lin": 420.75,
+                "pct": 78.43137254901961
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "67eb727b8438f2fc0987eaea2194ebbd97dcde0f388392fc52347bcf8d7fb1c7",
+          "bytes": 200,
+          "elapsedMs": 3.416399999987334
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/caminhada-de-6-minutos/calculate",
+        "startedAt": "2026-10-05T17:39:53.634Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "caminhada-de-6-minutos",
+            "main": [
+              "574",
+              "m"
+            ],
+            "label": "Distância prevista em 6 minutos",
+            "raw": {
+              "pred": 573.75,
+              "lin": 420.75,
+              "pct": 78.43137254901961
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "67eb727b8438f2fc0987eaea2194ebbd97dcde0f388392fc52347bcf8d7fb1c7",
+        "bytes": 200,
+        "elapsedMs": 3.416399999987334
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.pred",
+            "expected": 573.75,
+            "obtained": 573.75,
+            "tolerance": 0.00500001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.lin",
+            "expected": 420.75,
+            "obtained": 420.75,
+            "tolerance": 0.00500001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.pct",
+            "expected": 78.43,
+            "obtained": 78.43137254901961,
+            "tolerance": 0.00500001,
+            "difference": 0.0013725490196065948,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pred",
+            "expected": 573.75,
+            "obtained": 573.75,
+            "tolerance": 5.7375e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.lin",
+            "expected": 420.75,
+            "obtained": 420.75,
+            "tolerance": 4.2074999999999997e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pct",
+            "expected": 78.43137254901961,
+            "obtained": 78.43137254901961,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "574",
+            "obtained": "574",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "m",
+            "obtained": "m",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "caminhada-de-6-minutos",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+      "originalInput": {
+        "sexo": "F",
+        "idade": 70,
+        "altura": 160,
+        "peso": 70,
+        "dist": 280
+      },
+      "input": {
+        "sexo": "F",
+        "idade": 70,
+        "altura": 160,
+        "peso": 70,
+        "dist": 280
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pred": 439.7,
+          "lin": 300.7,
+          "pct": 63.68
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "440",
+          "m"
+        ],
+        "label": "Distância prevista em 6 minutos",
+        "raw": {
+          "pred": 439.69999999999993,
+          "lin": 300.69999999999993,
+          "pct": 63.67978166932
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/caminhada-de-6-minutos/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "F",
+            "idade": 70,
+            "altura": 160,
+            "peso": 70,
+            "dist": 280
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/caminhada-de-6-minutos/calculate",
+          "startedAt": "2026-10-05T17:39:53.948Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "caminhada-de-6-minutos",
+              "main": [
+                "440",
+                "m"
+              ],
+              "label": "Distância prevista em 6 minutos",
+              "raw": {
+                "pred": 439.69999999999993,
+                "lin": 300.69999999999993,
+                "pct": 63.67978166932
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "f35a5307bfccc159e675abc440875a96ac958b7129dfdbe92f30b97d3540277e",
+          "bytes": 221,
+          "elapsedMs": 5.487300000007963
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/caminhada-de-6-minutos/calculate",
+        "startedAt": "2026-10-05T17:39:53.948Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "caminhada-de-6-minutos",
+            "main": [
+              "440",
+              "m"
+            ],
+            "label": "Distância prevista em 6 minutos",
+            "raw": {
+              "pred": 439.69999999999993,
+              "lin": 300.69999999999993,
+              "pct": 63.67978166932
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "f35a5307bfccc159e675abc440875a96ac958b7129dfdbe92f30b97d3540277e",
+        "bytes": 221,
+        "elapsedMs": 5.487300000007963
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.pred",
+            "expected": 439.7,
+            "obtained": 439.69999999999993,
+            "tolerance": 0.050000010000000004,
+            "difference": 5.684341886080802e-14,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.lin",
+            "expected": 300.7,
+            "obtained": 300.69999999999993,
+            "tolerance": 0.050000010000000004,
+            "difference": 5.684341886080802e-14,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.pct",
+            "expected": 63.68,
+            "obtained": 63.67978166932,
+            "tolerance": 0.00500001,
+            "difference": 0.0002183306799992124,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pred",
+            "expected": 439.69999999999993,
+            "obtained": 439.69999999999993,
+            "tolerance": 4.3969999999999994e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.lin",
+            "expected": 300.69999999999993,
+            "obtained": 300.69999999999993,
+            "tolerance": 3.006999999999999e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pct",
+            "expected": 63.67978166932,
+            "obtained": 63.67978166932,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "440",
+            "obtained": "440",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "m",
+            "obtained": "m",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "caminhada-de-6-minutos",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+      "originalInput": {
+        "sexo": "F",
+        "idade": 50,
+        "altura": 165,
+        "peso": 60
+      },
+      "input": {
+        "sexo": "F",
+        "idade": 50,
+        "altura": 165,
+        "peso": 60
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pred": 588.75
+        },
+        "level": "info"
+      },
+      "recordedResult": {
+        "main": [
+          "589",
+          "m"
+        ],
+        "label": "Distância prevista em 6 minutos",
+        "raw": {
+          "pred": 588.75,
+          "lin": 449.75,
+          "pct": null
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/caminhada-de-6-minutos/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "F",
+            "idade": 50,
+            "altura": 165,
+            "peso": 60
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/caminhada-de-6-minutos/calculate",
+          "startedAt": "2026-10-05T17:39:54.263Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "caminhada-de-6-minutos",
+              "main": [
+                "589",
+                "m"
+              ],
+              "label": "Distância prevista em 6 minutos",
+              "raw": {
+                "pred": 588.75,
+                "lin": 449.75,
+                "pct": null
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "2cd4c0a8dee526d6c323191e57624e5a4c781c2b8b71569339a7875e5a126d46",
+          "bytes": 187,
+          "elapsedMs": 3.4297000000078697
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/caminhada-de-6-minutos/calculate",
+        "startedAt": "2026-10-05T17:39:54.263Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "caminhada-de-6-minutos",
+            "main": [
+              "589",
+              "m"
+            ],
+            "label": "Distância prevista em 6 minutos",
+            "raw": {
+              "pred": 588.75,
+              "lin": 449.75,
+              "pct": null
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "2cd4c0a8dee526d6c323191e57624e5a4c781c2b8b71569339a7875e5a126d46",
+        "bytes": 187,
+        "elapsedMs": 3.4297000000078697
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.pred",
+            "expected": 588.75,
+            "obtained": 588.75,
+            "tolerance": 0.00500001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pred",
+            "expected": 588.75,
+            "obtained": 588.75,
+            "tolerance": 5.8875e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.lin",
+            "expected": 449.75,
+            "obtained": 449.75,
+            "tolerance": 4.4974999999999997e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pct",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "589",
+            "obtained": "589",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "m",
+            "obtained": "m",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
