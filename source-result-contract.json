@@ -1,0 +1,222 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "caminhada-de-6-minutos",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "6b809641066fe5816160408f25d3249a5747684c",
+    "oldEngineSha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab",
+    "currentEngineSha256": "f82d015baaa1c90ec9cdc48cb2cbafc85fc554ca8bb8a5ef7f9218c6f094bbdc"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+      "input": {
+        "sexo": "M",
+        "idade": 60,
+        "altura": 175,
+        "peso": 80,
+        "dist": 450
+      },
+      "publicOutput": {
+        "id": "caminhada-de-6-minutos",
+        "main": [
+          "574",
+          "m"
+        ],
+        "label": "Distância prevista em 6 minutos",
+        "raw": {
+          "pred": 573.75,
+          "lin": 420.75,
+          "pct": 78.43137254901961
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pred": 573.75,
+          "lin": 420.75,
+          "pct": 78.43
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "574",
+          "m"
+        ],
+        "label": "Distância prevista em 6 minutos",
+        "level": "low",
+        "verdict": "Distância dentro da faixa normal",
+        "rows": [
+          [
+            "Percentual do previsto",
+            "78%"
+          ],
+          [
+            "Limite inferior da normalidade",
+            "421 m"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "pred": 573.75,
+          "lin": 420.75,
+          "pct": 78.43137254901961
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+      "input": {
+        "sexo": "F",
+        "idade": 70,
+        "altura": 160,
+        "peso": 70,
+        "dist": 280
+      },
+      "publicOutput": {
+        "id": "caminhada-de-6-minutos",
+        "main": [
+          "440",
+          "m"
+        ],
+        "label": "Distância prevista em 6 minutos",
+        "raw": {
+          "pred": 439.69999999999993,
+          "lin": 300.69999999999993,
+          "pct": 63.67978166932
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pred": 439.7,
+          "lin": 300.7,
+          "pct": 63.68
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "440",
+          "m"
+        ],
+        "label": "Distância prevista em 6 minutos",
+        "level": "mid",
+        "verdict": "Distância abaixo do limite inferior da normalidade",
+        "rows": [
+          [
+            "Percentual do previsto",
+            "64%"
+          ],
+          [
+            "Limite inferior da normalidade",
+            "301 m"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "pred": 439.69999999999993,
+          "lin": 300.69999999999993,
+          "pct": 63.67978166932
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+      "input": {
+        "sexo": "F",
+        "idade": 50,
+        "altura": 165,
+        "peso": 60
+      },
+      "publicOutput": {
+        "id": "caminhada-de-6-minutos",
+        "main": [
+          "589",
+          "m"
+        ],
+        "label": "Distância prevista em 6 minutos",
+        "raw": {
+          "pred": 588.75,
+          "lin": 449.75,
+          "pct": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pred": 588.75
+        },
+        "level": "info"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "589",
+          "m"
+        ],
+        "label": "Distância prevista em 6 minutos",
+        "level": "info",
+        "verdict": "Distância prevista para adulto saudável",
+        "rows": [
+          [
+            "Limite inferior da normalidade",
+            "450 m"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "pred": 588.75,
+          "lin": 449.75,
+          "pct": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

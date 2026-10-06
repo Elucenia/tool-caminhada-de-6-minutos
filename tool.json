@@ -328,7 +328,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Enright Sherrill 1998:regressãosexualidadealtura/peso,40–80 anos; LLN−153/−139 m",
-    "implementationVersion": "caminhada-de-6-minutos@native-2026-10-03+29e5a629422d",
+    "implementationVersion": "caminhada-de-6-minutos@native-2026-10-05+f82d015baaa1",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/9817683/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -626,7 +626,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+      "implementationHash": "f82d015baaa1c90ec9cdc48cb2cbafc85fc554ca8bb8a5ef7f9218c6f094bbdc",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "caminhada-de-6-minutos@native-2026-10-03+29e5a629422d",
+          "previousImplementationHash": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab",
+          "implementationHash": "f82d015baaa1c90ec9cdc48cb2cbafc85fc554ca8bb8a5ef7f9218c6f094bbdc",
+          "scientificBodySha256": "a322d075a3902e59c8589d4ad4145d7c4dcac5889854ad66c0836fe83b3b8cc6",
+          "metadataContractHash": "2048db7b37311a957c0cae572ba4cc5e5f9750992e7bbf8b881d88f966285cdc",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "As equações de Enright/Sherrill foram derivadas em adultos saudáveis de 40–80 anos, para primeiro teste pelo protocolo padronizado. Explicam aproximadamente 40% da variabilidade da distância. Predição e percentual não constituem diagnóstico; idade fora da faixa ou protocolo diferente requerem outra referência adequada.",
     "sourceLimitEvidence": {
@@ -645,20 +673,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/caminhada-de-6-minutos/calculator.js",
-    "bytes": 5307,
-    "sha256": "29e5a629422d7c5d64690f703a35d7c51b57b904eb4ac1df4da1d6385aa923ab"
+    "bytes": 5512,
+    "sha256": "f82d015baaa1c90ec9cdc48cb2cbafc85fc554ca8bb8a5ef7f9218c6f094bbdc"
   },
-  "sourceToolSha256": "5907daaab6888e935a4fdf820e2808e1356cbf446585a30d5042791fc35913f9",
+  "sourceToolSha256": "cfa0bf3e1be188095145f87821ae6c7708a21cf36a593f7a32871f1f96588d99",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "cea39b8e50295b7f051808a781b03837c98080f767c0108fa966ec321a15b64e",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "cea39b8e50295b7f051808a781b03837c98080f767c0108fa966ec321a15b64e",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

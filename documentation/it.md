@@ -86,3 +86,36 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Distanza entro l’intervallo normale
+
+| Dettagli del risultato | |
+| --- | --- |
+| Percentuale del previsto | 78% |
+| Limite inferiore della norma | 421 m |
+
+
+### 2
+
+Distanza al di sotto del limite inferiore della norma
+
+| Dettagli del risultato | |
+| --- | --- |
+| Percentuale del previsto | 64% |
+| Limite inferiore della norma | 301 m |
+
+
+### 3
+
+Distanza prevista per un adulto sano
+
+| Dettagli del risultato | |
+| --- | --- |
+| Limite inferiore della norma | 450 m |
+

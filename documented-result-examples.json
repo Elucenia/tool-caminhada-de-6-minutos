@@ -1,0 +1,1202 @@
+{
+  "id": "caminhada-de-6-minutos",
+  "implementationVersion": "caminhada-de-6-minutos@native-2026-10-05+f82d015baaa1",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Percentual do previsto",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "78%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite inferior da normalidade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "421 m",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distância dentro da faixa normal",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Percentual do previsto",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "64%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite inferior da normalidade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "301 m",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distância abaixo do limite inferior da normalidade",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Limite inferior da normalidade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "450 m",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distância prevista para adulto saudável",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Percentage of predicted",
+                "locale": "en",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "78%",
+                "locale": "en",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  78
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Lower limit of normal",
+                "locale": "en",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "421 m",
+                "locale": "en",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  421
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distance within the normal range",
+            "locale": "en",
+            "template": "documented-authored-3b05eac5b01f8a37bfe3"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Percentage of predicted",
+                "locale": "en",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "64%",
+                "locale": "en",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Lower limit of normal",
+                "locale": "en",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "301 m",
+                "locale": "en",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  301
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distance below the lower limit of normal",
+            "locale": "en",
+            "template": "documented-authored-da23d6bfc33136774824"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Lower limit of normal",
+                "locale": "en",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "450 m",
+                "locale": "en",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Predicted distance for a healthy adult",
+            "locale": "en",
+            "template": "documented-authored-b5e47b2b3108b1fae8db"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Porcentaje de lo predicho",
+                "locale": "es",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "78%",
+                "locale": "es",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  78
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Límite inferior de la normalidad",
+                "locale": "es",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "421 m",
+                "locale": "es",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  421
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distancia dentro del rango normal",
+            "locale": "es",
+            "template": "documented-authored-3b05eac5b01f8a37bfe3"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Porcentaje de lo predicho",
+                "locale": "es",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "64%",
+                "locale": "es",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Límite inferior de la normalidad",
+                "locale": "es",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "301 m",
+                "locale": "es",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  301
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distancia por debajo del límite inferior de la normalidad",
+            "locale": "es",
+            "template": "documented-authored-da23d6bfc33136774824"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Límite inferior de la normalidad",
+                "locale": "es",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "450 m",
+                "locale": "es",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distancia prevista para un adulto sano",
+            "locale": "es",
+            "template": "documented-authored-b5e47b2b3108b1fae8db"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pourcentage de la valeur prédite",
+                "locale": "fr",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "78%",
+                "locale": "fr",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  78
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite inférieure de la normale",
+                "locale": "fr",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "421 m",
+                "locale": "fr",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  421
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distance dans la plage normale",
+            "locale": "fr",
+            "template": "documented-authored-3b05eac5b01f8a37bfe3"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pourcentage de la valeur prédite",
+                "locale": "fr",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "64%",
+                "locale": "fr",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite inférieure de la normale",
+                "locale": "fr",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "301 m",
+                "locale": "fr",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  301
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distance inférieure à la limite inférieure de la normale",
+            "locale": "fr",
+            "template": "documented-authored-da23d6bfc33136774824"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Limite inférieure de la normale",
+                "locale": "fr",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "450 m",
+                "locale": "fr",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distance prévue pour un adulte en bonne santé",
+            "locale": "fr",
+            "template": "documented-authored-b5e47b2b3108b1fae8db"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Prozentsatz des Sollwerts",
+                "locale": "de",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "78%",
+                "locale": "de",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  78
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Untere Normgrenze",
+                "locale": "de",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "421 m",
+                "locale": "de",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  421
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distanz im Normbereich",
+            "locale": "de",
+            "template": "documented-authored-3b05eac5b01f8a37bfe3"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Prozentsatz des Sollwerts",
+                "locale": "de",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "64%",
+                "locale": "de",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Untere Normgrenze",
+                "locale": "de",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "301 m",
+                "locale": "de",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  301
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distanz unterhalb der unteren Normgrenze",
+            "locale": "de",
+            "template": "documented-authored-da23d6bfc33136774824"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Untere Normgrenze",
+                "locale": "de",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "450 m",
+                "locale": "de",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Vorhergesagte Distanz für einen gesunden Erwachsenen",
+            "locale": "de",
+            "template": "documented-authored-b5e47b2b3108b1fae8db"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Percentuale del previsto",
+                "locale": "it",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "78%",
+                "locale": "it",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  78
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite inferiore della norma",
+                "locale": "it",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "421 m",
+                "locale": "it",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  421
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distanza entro l’intervallo normale",
+            "locale": "it",
+            "template": "documented-authored-3b05eac5b01f8a37bfe3"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Percentuale del previsto",
+                "locale": "it",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "64%",
+                "locale": "it",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite inferiore della norma",
+                "locale": "it",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "301 m",
+                "locale": "it",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  301
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distanza al di sotto del limite inferiore della norma",
+            "locale": "it",
+            "template": "documented-authored-da23d6bfc33136774824"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Limite inferiore della norma",
+                "locale": "it",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "450 m",
+                "locale": "it",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Distanza prevista per un adulto sano",
+            "locale": "it",
+            "template": "documented-authored-b5e47b2b3108b1fae8db"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "النسبة المئوية من المتوقع",
+                "locale": "ar",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "٧٨%",
+                "locale": "ar",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  78
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الحد الأدنى الطبيعي",
+                "locale": "ar",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "٤٢١ م",
+                "locale": "ar",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  421
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "المسافة ضمن النطاق الطبيعي",
+            "locale": "ar",
+            "template": "documented-authored-3b05eac5b01f8a37bfe3"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "النسبة المئوية من المتوقع",
+                "locale": "ar",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "٦٤%",
+                "locale": "ar",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الحد الأدنى الطبيعي",
+                "locale": "ar",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "٣٠١ م",
+                "locale": "ar",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  301
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "المسافة أقل من الحد الأدنى الطبيعي",
+            "locale": "ar",
+            "template": "documented-authored-da23d6bfc33136774824"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الحد الأدنى الطبيعي",
+                "locale": "ar",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "٤٥٠ م",
+                "locale": "ar",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "المسافة المتوقعة للبالغ السليم",
+            "locale": "ar",
+            "template": "documented-authored-b5e47b2b3108b1fae8db"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "预测值百分比",
+                "locale": "zh",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "78%",
+                "locale": "zh",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  78
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "正常下限",
+                "locale": "zh",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "421 米",
+                "locale": "zh",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  421
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "距离在正常范围内",
+            "locale": "zh",
+            "template": "documented-authored-3b05eac5b01f8a37bfe3"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "预测值百分比",
+                "locale": "zh",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "64%",
+                "locale": "zh",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "正常下限",
+                "locale": "zh",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "301 米",
+                "locale": "zh",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  301
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "距离低于正常下限",
+            "locale": "zh",
+            "template": "documented-authored-da23d6bfc33136774824"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "正常下限",
+                "locale": "zh",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "450 米",
+                "locale": "zh",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "健康成人的预测距离",
+            "locale": "zh",
+            "template": "documented-authored-b5e47b2b3108b1fae8db"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "予測値に対する割合",
+                "locale": "ja",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "78%",
+                "locale": "ja",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  78
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "正常下限",
+                "locale": "ja",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "421 m",
+                "locale": "ja",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  421
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "距離は正常範囲内",
+            "locale": "ja",
+            "template": "documented-authored-3b05eac5b01f8a37bfe3"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "予測値に対する割合",
+                "locale": "ja",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "64%",
+                "locale": "ja",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "正常下限",
+                "locale": "ja",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "301 m",
+                "locale": "ja",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  301
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "正常下限未満の距離",
+            "locale": "ja",
+            "template": "documented-authored-da23d6bfc33136774824"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "正常下限",
+                "locale": "ja",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "450 m",
+                "locale": "ja",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "健康成人の予測距離",
+            "locale": "ja",
+            "template": "documented-authored-b5e47b2b3108b1fae8db"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Homem, 60 anos, 175 cm, 80 kg, andou 450 m: previsto 573,75 m (78%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अनुमानित का प्रतिशत",
+                "locale": "hi",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "78%",
+                "locale": "hi",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  78
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सामान्य की निचली सीमा",
+                "locale": "hi",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "421 मी",
+                "locale": "hi",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  421
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "दूरी सामान्य सीमा के भीतर",
+            "locale": "hi",
+            "template": "documented-authored-3b05eac5b01f8a37bfe3"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher, 70 anos, 160 cm, 70 kg, andou 280 m: previsto 439,7 m, abaixo do limite (300,7)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अनुमानित का प्रतिशत",
+                "locale": "hi",
+                "template": "documented-authored-740c7a9abe96ed9a4c9e"
+              },
+              "value": {
+                "text": "64%",
+                "locale": "hi",
+                "template": "documented-authored-0cb41ed1be4fdd9df50e",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सामान्य की निचली सीमा",
+                "locale": "hi",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "301 मी",
+                "locale": "hi",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  301
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "सामान्य की निचली सीमा से कम दूरी",
+            "locale": "hi",
+            "template": "documented-authored-da23d6bfc33136774824"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Mulher, 50 anos, 165 cm, 60 kg, sem distância: previsto 588,75 m",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सामान्य की निचली सीमा",
+                "locale": "hi",
+                "template": "documented-authored-906ff468c4377a1205a9"
+              },
+              "value": {
+                "text": "450 मी",
+                "locale": "hi",
+                "template": "documented-authored-4e72687670bc482161d4",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "स्वस्थ वयस्क के लिए अपेक्षित दूरी",
+            "locale": "hi",
+            "template": "documented-authored-b5e47b2b3108b1fae8db"
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}
